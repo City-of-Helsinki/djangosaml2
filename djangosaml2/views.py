@@ -196,7 +196,7 @@ def assertion_consumer_service(request,
     _set_subject_id(request.session, session_info['name_id'])
 
     logger.debug('Sending the post_authenticated signal')
-    post_authenticated.send_robust(sender=user, session_info=session_info)
+    post_authenticated.send_robust(sender=user, session_info=session_info, request=request)
 
     # redirect the user to the view where he came from
     relay_state = request.POST.get('RelayState', '/')
