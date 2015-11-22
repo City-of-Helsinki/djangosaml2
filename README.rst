@@ -1,3 +1,5 @@
+**NOTE:** This is a copy of the main repo at https://bitbucket.org/lgs/djangosaml2
+
 .. contents::
 
 ===========
